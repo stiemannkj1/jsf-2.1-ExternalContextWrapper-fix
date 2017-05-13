@@ -1,6 +1,6 @@
 # Use JSF/Mojarra `2.1.29-09` Instead!
 
-[In JSF/Mojarra `2.1.29-09` the `isSecure()` method has been added to `ExternalContextWrapper`](https://github.com/javaserverfaces/mojarra/commit/0c8b0131c58c09e8120f56f093e8c564f525e37a?diff=unified) ([JAVASERVERFACES-4205](https://java.net/jira/browse/JAVASERVERFACES-4205)). I highly recommend trying `2.1.29-09` to see if it address your problems.
+[In JSF/Mojarra `2.1.29-09` the `isSecure()` method has been added to `ExternalContextWrapper`](https://github.com/javaserverfaces/mojarra/commit/0c8b0131c58c09e8120f56f093e8c564f525e37a?diff=unified) ([Mojarra #4209](https://github.com/javaserverfaces/mojarra/issues/4209)). I highly recommend trying `2.1.29-09` to see if it address your problems.
 
 `ExternalContextWrapper` still does not implement `getSessionMaxInactiveInterval()` or `setSessionMaxInactiveInterval()` in `2.1.29-09`, so if you need to call those methods, you may still need this jar. 
 
